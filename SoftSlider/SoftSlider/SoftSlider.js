@@ -1,4 +1,4 @@
-﻿/*! Soft Slider - Beta | http://github.com/MYaman34/SoftSlider */
+﻿/*! Soft Slider - Beta | http://myaman34.github.io/SoftSlider/ */
 (function ($) {
     if (!$.SoftSlider) {
         $.fn.SoftSlider = function (Options) {
