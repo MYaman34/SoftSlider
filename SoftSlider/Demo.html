@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SoftSlider Demo</title>
+    <link href="SoftSlider/Styles/SoftSlider.css" rel="stylesheet" />
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="SoftSlider/SoftSlider.js"></script>
+</head>
+<body style="font-family: Arial; padding: 0; margin: 0">
+
+    <div id="demo-1" style="width: 980px; height: 340px; margin: 10px auto;">
+        <ul class="SoftSlider">
+            <li>
+                <img src="Images/1.jpg" alt="" />
+                <div class="caption">
+                    <div class="caption-title">Slide One</div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui est in parvis malis. Itaque nostrum est-quod nostrum dico
+                </div>
+            </li>
+            <li>
+                <img src="Images/2.jpg" alt="" />
+                <div class="caption">
+                    <div class="caption-title">Slide Two</div>
+                    Quid dubitas igitur mutare principia naturae? Neminem videbis ita laudatum, ut artifex callidus comparandarum voluptatum diceretur.
+                </div>
+            </li>
+            <li>
+                <img src="Images/3.jpg" alt="" />
+                <div class="caption">
+                    <div class="caption-title">Slide Three</div>
+                    Is ita vivebat, ut nulla tam exquisita posset inveniri voluptas, qua non abundaret. Ego vero isti, inquam, permitto. Fortasse id optimum, sed ubi illud: Plus semper voluptatis? Nam et complectitur verbis, quod vult, et dicit plane, quod intellegam
+                </div>
+            </li>
+            <li>
+                <img src="Images/4.jpg" alt="" />
+                <div class="caption">
+                    <div class="caption-title">Slide Four</div>
+                    Sin aliud quid voles, postea. Iam id ipsum absurdum, maximum malum neglegi. Invidiosum nomen est, infame, suspectum. Primum in nostrane potestate est, quid meminerimus? An vero, inquit, quisquam potest probare, quod perceptfum, quod. Nemo nostrum istius generis asotos iucunde putat vivere. Tu enim ista lenius, hic Stoicorum more nos vexat. Quem Tiberina descensio festo illo die tanto gaudio affecit
+                </div>
+            </li>
+            <li>
+                <img src="Images/5.jpg" alt="" />
+                <div class="caption">
+                    <div class="caption-title">Slide Five</div>
+                    Sed venio ad inconstantiae crimen, ne saepius dicas me aberrare
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        $("#demo-1").SoftSlider({
+            animation: { type: "fade" }
+        }).Setup();
+    </script>
+
+
+
+    <div id="demo-2" style="width: 980px; height: 340px; margin: 10px auto;">
+        <ul class="SoftSlider">
+            <li><img src="Images/1.jpg" alt="" /></li>
+            <li><img src="Images/2.jpg" alt="" /></li>
+            <li><img src="Images/3.jpg" alt="" /></li>
+            <li><img src="Images/4.jpg" alt="" /></li>
+            <li><img src="Images/5.jpg" alt="" /></li>
+        </ul>
+    </div>
+    <script>
+        $("#demo-2").SoftSlider({
+            animation: { speed: 500 },
+            markers: { visible: false },
+            thumbnails: { visible: true }
+        }).Setup();
+    </script>
+
+
+
+    <div id="demo-3" style="width: 1300px; height: 340px; margin: 10px auto;">
+        <ul class="SoftSlider">
+            <li><img src="Images/1.jpg" alt="" /></li>
+            <li><img src="Images/2.jpg" alt="" /></li>
+            <li><img src="Images/3.jpg" alt="" /></li>
+            <li><img src="Images/4.jpg" alt="" /></li>
+            <li><img src="Images/5.jpg" alt="" /></li>
+        </ul>
+    </div>
+    <script>
+        $("#demo-3").SoftSlider({
+            slider: {
+                onLoad: function () {
+                    var slider = this;
+                    slider.Wrapper.append(
+                            '<div style="position:absolute;width:160px;height:340px;background:#000;opacity:0.4" />' +
+                            '<div style="position:absolute;right:0;width:160px;height:340px;background:#000;opacity:0.4" />'
+                        );
+                }
+            },
+            slides: { width: 980 },
+            animation: { speed: 500 },
+            markers: { visible: false },
+            thumbnails: { visible: true }
+        }).Setup();
+    </script>
+
+</body>
+</html>

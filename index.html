@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>SoftSlider by MYaman34</title>
+    <title>SoftSlider - Jquery Slider</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -11,6 +11,10 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	
+	<link href="SoftSlider/SoftSlider/Styles/SoftSlider.css" rel="stylesheet" />
+	<script src="SoftSlider/jquery-1.9.1.min.js"></script>
+    <script src="SoftSlider/SoftSlider/SoftSlider.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -33,7 +37,31 @@ I wish I have more time for documentation but I'm working on another project.
 I intend to write documentation in the future.</p>
 
 <p>Please examine "Demo.html" file.</p>
+
+    <div id="demo-3" style="width: 500px; height: 250px;">
+        <ul class="SoftSlider">
+            <li><img src="SoftSlider/Images/1.jpg" alt="" /></li>
+            <li><img src="SoftSlider/Images/2.jpg" alt="" /></li>
+            <li><img src="SoftSlider/Images/3.jpg" alt="" /></li>
+            <li><img src="SoftSlider/Images/4.jpg" alt="" /></li>
+            <li><img src="SoftSlider/Images/5.jpg" alt="" /></li>
+        </ul>
+    </div>
+    <script>
+        $("#demo-3").SoftSlider({
+            animation: { speed: 400 },
+            markers: { visible: false },
+            thumbnails: { visible: true }
+        }).Setup();
+    </script>
+	
       </section>
+	  
+
+	  
+
+	  
+	  
       <footer>
         <p>This project is maintained by <a href="https://github.com/MYaman34">MYaman34</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
